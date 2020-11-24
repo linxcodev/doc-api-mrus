@@ -86,35 +86,35 @@ Authorization => Bearer apitoken
 ## User API
 
 ```
-POST localhost:8000/api/user
-GET localhost:8000/api/user (auth)
-POST localhost:8000/api/user/profile (auth)
+POST URL/to/user
+GET URL/to/user (auth)
+POST URL/to/user/profile (auth)
 ```
 
 ## Group API
 
 ```
 Show
-GET localhost:8000/api/group/{id} (auth)
+GET URL/to/group/{id} (auth)
 
 Logout
-GET localhost:8000/api/group/{id}/logout (auth)
+GET URL/to/group/{id}/logout (auth)
 
 Join Group
-POST localhost:8000/api/group/{id}/join (auth)
+POST URL/to/group/{id}/join (auth)
 
 Request Reading
-POST localhost:8000/api/group/{id}/reading/request (auth)
+POST URL/to/group/{id}/reading/request (auth)
 
 Finish Reading
-POST localhost:8000/api/group/{id}/reading/request/{requestId} (auth)
+POST URL/to/group/{id}/reading/request/{requestId} (auth)
 ```
 
 Create Group Private
 
 ```
 Create
-POST localhost:8000/api/group
+POST URL/to/group
 field = [
   'name' => 'required',
   'grouptype_id' => 'required',
@@ -123,19 +123,19 @@ field = [
 ]
 
 Get Group Type
-GET localhost:8000/api/grouptype
+GET URL/to/grouptype
 ```
 
 Users Group
 
 ```
-GET localhost:8000/api/group/{id}/users
+GET URL/to/group/{id}/users
 ```
 
 Paid Group
 
 ```
-POST localhost:8000/api/group/{id}/paid
+POST URL/to/group/{id}/paid
 field = [
 'amount' => 'required',
 'currency' => 'required',
@@ -147,7 +147,7 @@ field = [
 ## Dashboard API
 
 ```
-POST localhost:8000/api/dashboard (auth)
+POST URL/to/dashboard (auth)
 field = [
 'os' => 'required',
 'locality' => 'required',
@@ -157,7 +157,7 @@ field = [
 
 ## Device API
 ```
-POST localhost:8000/api/device (auth)
+POST URL/to/device (auth)
 field = [
   'os' => 'required',
   'token' => 'required'
@@ -166,7 +166,7 @@ field = [
 
 ## Configuration API
 ```
-GET localhost:8000/api/configuration/{key}
+GET URL/to/configuration/{key}
 ```
 
 ## Admin Panel
@@ -174,7 +174,8 @@ GET localhost:8000/api/configuration/{key}
 Login
 ```
 Login
-localhost:8000/
+
+URL/to/login
 ```
 
 Daftar User
